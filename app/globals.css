@@ -10,6 +10,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  --color-primaryRed: #D32F2F;      /* 🔴 Primary Red */
+  --color-primaryRedHover: #FF6B5E;      /* 🔴 Primary Red Hover */
+  --color-textBlack: #212121;       /* ⚫ Text/Accent Black */
+  --color-whiteBackground: #FFFFFF; /* ⚪ White Background */
+  --color-calmBlue: #1976D2;        /* 🔵 Calm Blue (Accent) */
+  --color-lightGray: #F5F5F5;       /* 🌫️ Light Gray */
+  --color-fireYellow: #FFCC33;      /* � Fire Yellow */
+  
+  --font-heading: "Merriweather", serif;
+  --font-subtitle: "Roboto", sans-serif;
+  --font-body: "Open Sans", "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +31,32 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.text-fireYellow {
+  background: linear-gradient(90deg, #FEDE17, #FFD700, #FFA500, #FFCC33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
