@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Logo from "@/assets/logo.png";
 import MenuIcon from "@/assets/menu.svg";
-import ArrowRight from "@/assets/arrow-right.svg";
 
 const Header = () => (
   <header className="sticky top-0 z-20">

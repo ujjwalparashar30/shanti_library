@@ -44,7 +44,7 @@ export default function LibraryContact() {
             Visit Our <span className="text-amber-500">Library</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Find us in the heart of Mandawali. We're here to help you on your learning journey.
+            Find us in the heart of Mandawali. We&apos;re here to help you on your learning journey.
           </p>
         </div>
 
